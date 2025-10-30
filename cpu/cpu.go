@@ -6,13 +6,6 @@
 // various CPU architectures.
 package cpu
 
-const CacheLinePadSize = 64
-const IsBigEndian = false
-
-func doinit(){
-
-}
-
 // CacheLinePad is used to pad structs to avoid false sharing.
 type CacheLinePad struct{ _ [CacheLinePadSize]byte }
 
