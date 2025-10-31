@@ -1,4 +1,4 @@
-//go:build linux && sw64
+//go:build sw64
 
 package cpu
 

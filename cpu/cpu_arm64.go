@@ -2,9 +2,12 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+//go:build arm64
 package cpu
 
 const cacheLineSize = 64
+const CacheLinePadSize = 64
+const IsBigEndian = false
 
 // HWCAP/HWCAP2 bits. These are exposed by Linux.
 const (

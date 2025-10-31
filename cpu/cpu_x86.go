@@ -2,11 +2,14 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
+//go:build 386 || amd64 || amd64p32
 // +build 386 amd64 amd64p32
 
 package cpu
 
 const cacheLineSize = 64
+const CacheLinePadSize = 64
+const IsBigEndian = false
 
 func init() {
 	maxID, _, _, _ := cpuid(0, 0)
